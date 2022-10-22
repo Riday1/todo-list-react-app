@@ -12,7 +12,9 @@ const Todolists = () => {
         <div>
             <h1>Total TodoList : </h1>
             {
-                todoLists.map(todo => <Todo></Todo>)
+                todoLists.map(todo => <Todo
+                    todo={todo}
+                ></Todo>)
             }
         </div>
     );
