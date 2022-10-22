@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Todo from '../Todo/Todo';
 import './Todolists.css'
 const Todolists = () => {
     const [todoLists, setTodolist] = useState([])
@@ -10,7 +11,9 @@ const Todolists = () => {
     return (
         <div>
             <h1>Total TodoList : </h1>
-            
+            {
+                todoLists.map(todo => <Todo></Todo>)
+            }
         </div>
     );
 };
